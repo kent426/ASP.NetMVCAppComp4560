@@ -19,7 +19,7 @@ namespace ShowFiles.Controllers
 
         public ActionResult Filecontent(string filename)
         {
-            var filepath = Server.MapPath($"../TextFiles/{filename}.txt");
+            var filepath = Server.MapPath($"~/TextFiles/{filename}.txt");
             string c;
             if (System.IO.File.Exists(filepath))
             {
